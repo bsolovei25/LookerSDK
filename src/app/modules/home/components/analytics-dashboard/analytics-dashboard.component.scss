@@ -1,0 +1,13 @@
+.analytics-dashboard{
+  &__new-page{
+    &__dashboard{
+      display: flex;
+      flex-direction: row;
+      &__component-m{
+        flex: 2;
+        max-width: 636px;
+        max-height: 472px;
+      }
+    }
+  }
+}

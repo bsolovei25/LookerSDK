@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/fonts";
+
+:root{
+    --default-grey-color: #8C9BA5;
+    --default-black-color: #152935;
+    --default-secondary-text-color: #5A6872;
+}
+
+html, body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 14px;
+  margin: 0;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
