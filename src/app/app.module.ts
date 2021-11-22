@@ -11,6 +11,7 @@ import { LineChartComponent } from './modules/home/components/line-chart/line-ch
 import { AnalyticsDashboardComponent } from "./modules/home/components/analytics-dashboard/analytics-dashboard.component";
 import { IconDirective } from './shared/directives/icon-directives/icon.directive';
 import { MatIconModule } from "@angular/material/icon";
+import { KpiBoxComponent } from './modules/home/components/kpi-chart/kpi-box/kpi-box.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatIconModule } from "@angular/material/icon";
     KpiChartComponent,
     LineChartComponent,
     AnalyticsDashboardComponent,
-    IconDirective
+    IconDirective,
+    KpiBoxComponent
   ],
   imports: [
     BrowserModule,

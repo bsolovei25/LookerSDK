@@ -93,7 +93,7 @@
         display: table-cell;
         vertical-align: middle;
         padding-bottom: 5px!important;
-        padding-left: 8px;
+        padding-left: 24px;
       }
       &__description{
         display: table-cell;
@@ -109,4 +109,8 @@
 :host ::ng-deep .container__footer__legend__img-box > mat-icon {
   width: 6px;
   height: 6px;
+}
+
+hr{
+  border: 1px solid var(--default-hr-color);
 }
