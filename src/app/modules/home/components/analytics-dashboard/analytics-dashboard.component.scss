@@ -1,12 +1,25 @@
 .analytics-dashboard{
+  height:100%;
+  width:100%;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
   &__new-page{
     &__dashboard{
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       &__component-m{
         flex: 2;
         max-width: 636px;
         max-height: 472px;
+        min-width: 636px;
+        min-height: 472px;
+      }
+      &__component-l{
+        flex: 2;
+        max-width: 1296px;
+        max-height: 472px;
+        min-width: 1296px;
+        min-height: 472px;
       }
     }
   }
