@@ -1,0 +1,88 @@
+.container {
+  margin-top: 16px;
+
+  &__header {
+    padding-left: 24px;
+
+    &__hint {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      &__bar {
+        &__content {
+          display: flex;
+          flex-direction: row;
+
+          &__info-text {
+            margin: 0 10.8px 4px 0;
+            line-height: 20px;
+            color: var(--default-black-color);
+          }
+        }
+
+        &__date {
+          color: var(--default-grey-color);
+
+          &__paragraph {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &__icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 27.75px;
+
+        &__filter {
+          margin-right: 19.75px;
+        }
+
+        &__more-actions {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+
+  &__boxes {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+
+    &__first-row {
+      display: flex;
+      flex-direction: row;
+      padding-top: 16px;
+    }
+
+    &__second-row {
+      display: flex;
+      flex-direction: row;
+      padding-top: 16px;
+    }
+  }
+}
+
+:host ::ng-deep .container__footer__legend__img-box > mat-icon {
+  width: 6px;
+  height: 6px;
+}
+
+:host ::ng-deep .container__header__hint__bar__content > mat-icon {
+  width: 16px;
+  height: 16px;
+  padding-top: 2px;
+}
+
+:host ::ng-deep .container__header__hint__icons__filter > mat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+:host ::ng-deep .container__header__hint__icons__more-actions > mat-icon {
+  width: 24px;
+  height: 24px;
+}

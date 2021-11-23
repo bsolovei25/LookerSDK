@@ -1,0 +1,14 @@
+<div class="box">
+  <div class="box__event">{{event}}</div>
+  <div class="box__number">{{eventNum}}</div>
+  <div class="box__percent" [ngStyle]="{'color': isArrowGreen()?'var(--green-arrow-color)':'var(--red-arrow-color)'}">{{percent}}
+    <span class="box__percent__green" *ngIf="isArrowGreen();else arrowRed">
+      <mat-icon appIcon svgIcon="green-arrow-up" aria-hidden="false" aria-label="filter SVG icon"></mat-icon>
+    </span>
+    <ng-template #arrowRed>
+      <span class="box__percent__red" *ngIf="arrowPosition === 'down'">
+        <mat-icon appIcon svgIcon="red-arrow-down" aria-hidden="false" aria-label="filter SVG icon"></mat-icon>
+      </span>
+    </ng-template>
+  </div>
+</div>

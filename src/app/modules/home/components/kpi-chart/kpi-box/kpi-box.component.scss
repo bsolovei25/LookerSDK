@@ -1,0 +1,41 @@
+.box{
+  min-height: 186px;
+  min-width: 176px;
+  margin-left: 16px;
+
+  &__event{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--default-secondary-text-color);
+  }
+  &__number{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 52px;
+    color: var(--default-black-color);
+  }
+  &__percent{
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+
+  }
+}
+
+:host ::ng-deep .box__percent__green > mat-icon {
+  width: 12px;
+  height: 12px;
+  padding-top: 1px;
+}
+
+:host ::ng-deep .box__percent__red > mat-icon {
+  width: 12px;
+  height: 12px;
+  padding-top: 1px;
+}
