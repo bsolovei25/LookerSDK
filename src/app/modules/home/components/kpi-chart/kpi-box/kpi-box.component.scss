@@ -1,7 +1,6 @@
 .box{
   min-height: 186px;
   min-width: 176px;
-  border: 1px solid black;
   margin-left: 16px;
 
   &__event{
@@ -27,4 +26,16 @@
     padding-top: 8px;
 
   }
+}
+
+:host ::ng-deep .box__percent__green > mat-icon {
+  width: 12px;
+  height: 12px;
+  padding-top: 1px;
+}
+
+:host ::ng-deep .box__percent__red > mat-icon {
+  width: 12px;
+  height: 12px;
+  padding-top: 1px;
 }

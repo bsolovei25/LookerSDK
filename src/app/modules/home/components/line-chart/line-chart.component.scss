@@ -1,53 +1,66 @@
-.container{
+.container {
   margin-top: 16px;
-  &__header{
+
+  &__header {
     padding-left: 24px;
-    &__hint{
+
+    &__hint {
       display: flex;
       flex-direction: row;
       position: relative;
-      &__bar{
-        &__content{
+
+      &__bar {
+        &__content {
           display: flex;
           flex-direction: row;
-          &__info-text{
+
+          &__info-text {
             margin: 0 10.8px 4px 0;
             line-height: 20px;
-            color: var(--default-black-color );
+            color: var(--default-black-color);
           }
         }
-        &__date{
+
+        &__date {
           color: var(--default-grey-color);
-          &__paragraph{
+
+          &__paragraph {
             font-size: 12px;
           }
         }
       }
-      &__icons{
+
+      &__icons {
         position: absolute;
         top: 0;
         right: 0;
         margin-top: 27.75px;
-        &__filter{
+
+        &__filter {
           margin-right: 19.75px;
         }
-        &__more-actions{
+
+        &__more-actions {
           margin-right: 24px;
         }
       }
     }
   }
-  &__chart{
+
+  &__chart {
     padding-left: 24px;
-    &__data{
+
+    &__data {
       display: flex;
       flex-direction: row;
-      &__verticaltext{
+
+      &__verticaltext {
         width: 16px;
         position: relative;
-        &__subject{
+
+        &__subject {
           //transform: rotate(-90deg);
-          transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
           word-wrap: break-word;
           position: absolute;
           top: 50%;
@@ -57,45 +70,53 @@
           color: var(--default-secondary-text-color);
         }
       }
-      &__linear{
-        &__picture{
+
+      &__linear {
+        &__picture {
           max-height: 272px;
           min-width: 564px;
         }
       }
     }
-    &__horizontaltext{
+
+    &__horizontaltext {
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      &__paragraph{
+
+      &__paragraph {
         margin: 12px 0 24px 0;
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
         color: var(--default-black-color);
       }
-      mat-icon{
-        padding-bottom: 10px;
+
+      mat-icon {
+        padding: 0 0 18px 8px;
       }
     }
   }
-  &__footer{
+
+  &__footer {
     display: table;
     text-align: center;
     padding-left: 16px;
     margin: 16px 0 24px 0;
-    &__legend{
+
+    &__legend {
       display: table-cell;
       vertical-align: middle;
-      &__img-box{
+
+      &__img-box {
         display: table-cell;
         vertical-align: middle;
-        padding-bottom: 5px!important;
+        padding-bottom: 5px !important;
         padding-left: 24px;
       }
-      &__description{
+
+      &__description {
         display: table-cell;
         vertical-align: middle;
         padding-left: 8px;
@@ -111,6 +132,27 @@
   height: 6px;
 }
 
-hr{
+:host ::ng-deep .container__header__hint__bar__content > mat-icon {
+  width: 16px;
+  height: 16px;
+  padding-top: 2px;
+}
+
+:host ::ng-deep .container__header__hint__icons__filter > mat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+:host ::ng-deep .container__header__hint__icons__more-actions > mat-icon {
+  width: 24px;
+  height: 24px;
+}
+
+:host ::ng-deep .container__chart__horizontaltext > mat-icon {
+  width: 10px;
+  height: 10px;
+}
+
+hr {
   border: 1px solid var(--default-hr-color);
 }

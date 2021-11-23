@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {IconDirective} from "../../../../shared/directives/icon-directives/icon.directive";
+import {Component, OnInit} from '@angular/core';
 import {MatIconRegistry} from "@angular/material/icon";
 import {DomSanitizer} from "@angular/platform-browser";
 import {svgArrowDown} from "../../../../../assets/icons/svg-arrow-down";
@@ -17,8 +16,8 @@ import {svgOrangeCircle} from "../../../../../assets/icons/svg-orange-circle";
 })
 export class LineChartComponent implements OnInit {
 
-  public loopTimes:Array<string> = ['Marketing','Design', 'Development'];
-  public colorStamps:Array<string> = ['velvet-circle','green-circle', 'orange-circle'];
+  public loopTimes: Array<string> = ['Marketing', 'Design', 'Development'];
+  public colorStamps: Array<string> = ['velvet-circle', 'green-circle', 'orange-circle'];
 
   constructor(private iconRegistry: MatIconRegistry, private sanitizer: DomSanitizer) {
     this.registerIcons();
@@ -28,7 +27,7 @@ export class LineChartComponent implements OnInit {
 
   }
 
-  private registerIcons():void{
+  private registerIcons(): void {
     this.iconRegistry.addSvgIconLiteral('arrow-down', this.sanitizer.bypassSecurityTrustHtml(svgArrowDown));
     this.iconRegistry.addSvgIconLiteral('velvet-circle', this.sanitizer.bypassSecurityTrustHtml(svgVelvetCircle));
     this.iconRegistry.addSvgIconLiteral('green-circle', this.sanitizer.bypassSecurityTrustHtml(svgGreenCircle));

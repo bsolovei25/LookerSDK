@@ -19,12 +19,12 @@ export class KpiChartComponent implements OnInit {
   public event: string = "Events created";
   public avgEvent: string = "Avg. event attendance";
   public eventNum: string = "35";
-  public persentbox2: string = "1.78";
-  public persentbox1: string = "6.32";
-  public persentbox3: string = "2.01";
-  public persentbox4: string = "3.01";
-  public persentbox5: string = "16.01";
-  public persentbox6: string = "5.26";
+  public persentbox2: string = "1.78%";
+  public persentbox1: string = "6.32%";
+  public persentbox3: string = "2.01%";
+  public persentbox4: string = "3.01%";
+  public persentbox5: string = "16.01%";
+  public persentbox6: string = "5.26%";
   public arrowUp: string = "up";
   public arrowDown: string = "down";
 
