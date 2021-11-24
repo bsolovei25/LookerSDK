@@ -12,6 +12,8 @@ import { AnalyticsDashboardComponent } from "./modules/home/components/analytics
 import { IconDirective } from './shared/directives/icon-directives/icon.directive';
 import { MatIconModule } from "@angular/material/icon";
 import { KpiBoxComponent } from './modules/home/components/kpi-chart/kpi-box/kpi-box.component';
+import { CampaignsOverviewComponent } from './modules/home/components/campaigns-overview/campaigns-overview.component';
+import {HighchartsChartModule} from "highcharts-angular";
 
 @NgModule({
   declarations: [
@@ -22,13 +24,15 @@ import { KpiBoxComponent } from './modules/home/components/kpi-chart/kpi-box/kpi
     LineChartComponent,
     AnalyticsDashboardComponent,
     IconDirective,
-    KpiBoxComponent
+    KpiBoxComponent,
+    CampaignsOverviewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatIconModule
+    MatIconModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

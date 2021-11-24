@@ -1,11 +1,8 @@
 .container {
-  margin: 16px 8px;
-  border-radius: 8px;
-  background-color: var(--default-white-color);
+  margin-top: 16px;
 
   &__header {
     padding-left: 24px;
-    padding-top: 16px;
 
     &__hint {
       display: flex;
@@ -55,17 +52,6 @@
     flex-direction: column;
     padding-left: 24px;
 
-    &__first-row {
-      display: flex;
-      flex-direction: row;
-      padding-top: 16px;
-    }
-
-    &__second-row {
-      display: flex;
-      flex-direction: row;
-      padding-top: 16px;
-    }
   }
 }
 
