@@ -1,8 +1,11 @@
 .container {
-  margin-top: 16px;
+  margin: 16px 8px;
+  border-radius: 8px;
+  background-color: var(--default-white-color);
 
   &__header {
     padding-left: 24px;
+    padding-top: 16px;
 
     &__hint {
       display: flex;

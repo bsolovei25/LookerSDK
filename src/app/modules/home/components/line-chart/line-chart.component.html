@@ -33,9 +33,19 @@
     <hr>
   </div>
   <div class="container__footer">
-    <div *ngFor="let i of this.loopTimes" class="container__footer__legend">
+<!--    TODO refactor-->
+<!--    <div *ngFor="let i of this.loopTimes" class="container__footer__legend">-->
+<!--      <span class="container__footer__legend__img-box"><mat-icon appIcon svgIcon="velvet-circle" aria-hidden="false" aria-label="velvet circle SVG icon"></mat-icon></span>-->
+<!--      <span class="container__footer__legend__description">{{i}}</span>-->
+<!--    </div>-->
+
+    <div class="container__footer__legend">
       <span class="container__footer__legend__img-box"><mat-icon appIcon svgIcon="velvet-circle" aria-hidden="false" aria-label="velvet circle SVG icon"></mat-icon></span>
-      <span class="container__footer__legend__description">{{i}}</span>
+      <span class="container__footer__legend__description">Marketing</span>
+      <span class="container__footer__legend__img-box"><mat-icon appIcon svgIcon="green-circle" aria-hidden="false" aria-label="velvet circle SVG icon"></mat-icon></span>
+      <span class="container__footer__legend__description">Design</span>
+      <span class="container__footer__legend__img-box"><mat-icon appIcon svgIcon="orange-circle" aria-hidden="false" aria-label="velvet circle SVG icon"></mat-icon></span>
+      <span class="container__footer__legend__description">Development</span>
     </div>
   </div>
 </div>

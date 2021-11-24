@@ -19,22 +19,21 @@ export class LineChartComponent implements OnInit {
 
   public loopTimes: Array<string> = ['Marketing', 'Design', 'Development'];
   public colorStamps: Array<string> = ['velvet-circle', 'green-circle', 'orange-circle'];
+
   public options: any = {
     chart: {
       type: 'area',
       backgroundColor: "var(--default-white-color)"
     },
     accessibility: {
-      description: 'Image description: An area chart compares the nuclear stockpiles of the USA and the USSR/Russia between 1945 and 2017. The number of nuclear weapons is plotted on the Y-axis and the years on the X-axis. The chart is interactive, and the year-on-year stockpile levels can be traced for each country. The US has a stockpile of 6 nuclear weapons at the dawn of the nuclear age in 1945. This number has gradually increased to 369 by 1950 when the USSR enters the arms race with 6 weapons. At this point, the US starts to rapidly build its stockpile culminating in 32,040 warheads by 1966 compared to the USSR’s 7,089. From this peak in 1966, the US stockpile gradually decreases as the USSR’s stockpile expands. By 1978 the USSR has closed the nuclear gap at 25,393. The USSR stockpile continues to grow until it reaches a peak of 45,000 in 1986 compared to the US arsenal of 24,401. From 1986, the nuclear stockpiles of both countries start to fall. By 2000, the numbers have fallen to 10,577 and 21,000 for the US and Russia, respectively. The decreases continue until 2017 at which point the US holds 4,018 weapons compared to Russia’s 4,500.'
+      description:null
     },
     title: {
-      text: 'US and USSR nuclear stockpiles'
+      text: null
     },
 
     subtitle: {
-      text: 'Sources: <a href="https://thebulletin.org/2006/july/global-nuclear-stockpiles-1945-2006">' +
-        'thebulletin.org</a> &amp; <a href="https://www.armscontrol.org/factsheets/Nuclearweaponswhohaswhat">' +
-        'armscontrol.org</a>'
+      text: null
     },
     xAxis: {
       allowDecimals: false,
@@ -47,29 +46,26 @@ export class LineChartComponent implements OnInit {
         color: 'red'
       },
       accessibility: {
-        rangeDescription: 'Range: 1940 to 2017.'
+        rangeDescription: 'Range: 16 to 24.'
       }
     },
     yAxis: {
       title: {
-        text: 'Nuclear weapon states'
+        text: null
       },
       labels: {
-        // formatter: function () {
-        //   return this.value / 1000 + 'k';
-        // }
       }
     },
     tooltip: {
-      pointFormat: '{series.name} had stockpiled <b>{point.y:,.0f}</b><br/>warheads in {point.x}'
+      pointFormat: '{series.name} had <b>{point.y:,.0f}</b><br/>open jobs in {point.x} Jun'
     },
     plotOptions: {
       area: {
-        pointStart: 1940,
+        pointStart: 15,
         marker: {
-          enabled: false,
+          enabled: true,
           symbol: 'circle',
-          radius: 2,
+          radius: 4,
           states: {
             hover: {
               enabled: true
@@ -79,34 +75,39 @@ export class LineChartComponent implements OnInit {
       }
     },
     series: [{
-      name: 'USA',
+      name: 'Design',
       data: [
 
-        369, 640, 1005, 1436, 2063, 3057, 4618, 6444, 9822, 15468,
+        49, 69, 51, 70, 60, 63, 51, 44, 63, 60,
         //20434, 24126, 27387, 29459, 31056, 31982, 32040, 31233, 29224, 27342,
 
       ],
-      color:'#AC6EFF',
+      color:'#4AEBD7',
       zIndex: 3
     }, {
-      name: 'USSR/Russia',
+      name: 'Development',
       data: [
 
-        11643, 13092, 14478, 15915, 17385, 19055, 21205, 23044, 25393, 27935,
+        89, 81, 91, 105, 80, 75, 87, 90, 77, 81,
         //30062, 32049, 33952, 35804, 37431, 39197, 45000, 43000, 41000, 39000,
 
       ],
       color:'#FEBA69',
       zIndex: 2
     },{
-      name: 'TomatoTown',
-      plotBackgroundColor: '#FF0000',
+      name: 'Marketing',
       data: [
-        40062, 42049, 43952, 45804, 47431, 49197, 55000, 63000, 71000, 89000,
+        143, 130, 189, 174, 124, 139, 156, 189, 161, 230,
         //47000, 45000, 43000, 41000, 39000, 37000, 35000, 34000, 33000, 32000,
 
       ],
-      color:'#4AEBD7',
+      //TODO custom tooltips
+      // marker: {
+      //   symbol: 'hollow_circle',
+      //   lineColor: null,
+      //   lineWidth: 4
+      // },
+      color:'#AC6EFF',
       zIndex: 1
     }]
   }
@@ -120,6 +121,12 @@ export class LineChartComponent implements OnInit {
   }
 
   private drawChart():void{
+    //TODO create custom tooltips
+    // Highcharts.SVGRenderer.prototype.symbols.hollow_circle = function (x:number, y:number, w:number, h:number) {
+    //   w = 9;
+    //   h = 8;
+    //   return ['M', x, y, 'L', x + w, y + h, 'M', x + w, y, 'L', x, y + h, 'z'];
+    // }
     Highcharts.chart('linearChart', this.options);
   }
 
