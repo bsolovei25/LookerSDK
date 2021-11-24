@@ -129,6 +129,10 @@
       }
     }
   }
+  .hr-line{
+    width: 94%;
+    margin: auto 24px auto auto;
+  }
 }
 
 :host ::ng-deep .container__footer__legend__img-box > mat-icon {
