@@ -1,7 +1,9 @@
 .container {
-  margin: 16px 8px;
+  margin: 16px 16px;
   border-radius: 8px;
   background-color: var(--default-white-color);
+  min-width: 636px;
+  min-height: 472px;
 
   &__header {
     padding-left: 24px;

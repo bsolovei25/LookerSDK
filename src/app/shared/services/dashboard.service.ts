@@ -18,7 +18,6 @@ export class DashboardService {
       {
         title: 'Shared Axis Chart'
       }))
-    debugger
     return this.dashBoardInfo$;
   }
 
