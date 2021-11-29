@@ -1,9 +1,9 @@
 .analytics-dashboard{
   height:100%;
   width:100%;
-  overflow:hidden; /* or overflow:auto; if you want scrollbars */
-  background-color: var(--default-bg-color);
+  //background-color: var(--default-bg-color);
   &__new-page{
+    background-color: var(--default-bg-color);
     &__dashboard{
       display: flex;
       //temporary
@@ -33,4 +33,8 @@
 
 .example{
   margin: 16px 8px;
+  img{
+    max-width: 636px;
+    max-height: 472px;
+  }
 }

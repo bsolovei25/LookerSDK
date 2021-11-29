@@ -1,0 +1,106 @@
+.container {
+  border-radius: 8px;
+  margin: 16px 16px;
+  background-color: var(--default-white-color);
+  min-width: 636px;
+  min-height: 472px;
+
+  &__header {
+    padding-left: 24px;
+    padding-top: 16px;
+
+    &__hint {
+      display: flex;
+      flex-direction: row;
+      position: relative;
+
+      &__bar {
+        &__content {
+          display: flex;
+          flex-direction: row;
+
+          &__info-text {
+            margin: 0 10.8px 4px 0;
+            line-height: 20px;
+            color: var(--default-black-color);
+          }
+        }
+
+        &__date {
+          color: var(--default-grey-color);
+
+          &__paragraph {
+            font-size: 12px;
+          }
+        }
+      }
+
+      &__icons {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 27.75px;
+
+        &__filter {
+          margin-right: 19.75px;
+        }
+
+        &__more-actions {
+          margin-right: 24px;
+        }
+      }
+    }
+  }
+
+  &__chart {
+    padding-left: 24px;
+
+    &__data {
+      display: flex;
+      flex-direction: row;
+
+      &__verticaltext {
+        width: 16px;
+        position: relative;
+
+        &__subject {
+          //transform: rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          word-wrap: break-word;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          font-size: 12px;
+          line-height: 16px;
+          color: var(--default-secondary-text-color);
+        }
+      }
+
+      &__linear {
+        &__picture {
+          max-height: 272px;
+          min-width: 564px;
+        }
+      }
+    }
+
+    &__horizontaltext {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      &__paragraph {
+        margin: 12px 0 24px 0;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--default-black-color);
+      }
+
+      mat-icon {
+        margin: 0 0 18px 8px;
+      }
+    }
+  }
+}

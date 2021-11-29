@@ -14,6 +14,7 @@ import { MatIconModule } from "@angular/material/icon";
 import { KpiBoxComponent } from './modules/home/components/kpi-chart/kpi-box/kpi-box.component';
 import { CampaignsOverviewComponent } from './modules/home/components/campaigns-overview/campaigns-overview.component';
 import {HighchartsChartModule} from "highcharts-angular";
+import { DuoChartComponent } from './modules/home/components/duo-chart/duo-chart.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {HighchartsChartModule} from "highcharts-angular";
     AnalyticsDashboardComponent,
     IconDirective,
     KpiBoxComponent,
-    CampaignsOverviewComponent
+    CampaignsOverviewComponent,
+    DuoChartComponent
   ],
   imports: [
     BrowserModule,
